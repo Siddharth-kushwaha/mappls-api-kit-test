@@ -1,5 +1,4 @@
 {
-  "originHash" : "1caf88f801f7d766c93479f95068c17c22746c49ef481e2224814423b7947d44",
   "pins" : [
     {
       "identity" : "mappls-api-core-test",
@@ -11,5 +10,5 @@
       }
     }
   ],
-  "version" : 3
+  "version" : 2
 }
