@@ -1,0 +1,15 @@
+{
+  "originHash" : "1caf88f801f7d766c93479f95068c17c22746c49ef481e2224814423b7947d44",
+  "pins" : [
+    {
+      "identity" : "mappls-api-core-test",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Siddharth-kushwaha/mappls-api-core-test.git",
+      "state" : {
+        "revision" : "1b94b78e5626f0e2f28fd4d344c8f2b807f4601c",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
