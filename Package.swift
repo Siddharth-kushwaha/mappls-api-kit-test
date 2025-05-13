@@ -7,9 +7,7 @@ import PackageDescription
 import Foundation
 
 let version = "1.0.0"
-let commonChecksum = "37ef32f3b82d70e2a458f75605b74e90aba9d6bbb4ddc54f529c43f352679f0e"
-
-let turfVersion: Version = "4.0.0"
+let commonChecksum = "81717b5c7d423fde48e3f5faf3a6470c1c6a698923ae14cf97cb83214ac83fbc"
 
 let package = Package(
     name: "MapplsAPIKit",
