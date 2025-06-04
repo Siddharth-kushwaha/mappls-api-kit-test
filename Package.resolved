@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Siddharth-kushwaha/mappls-api-core-test.git",
       "state" : {
-        "revision" : "1b94b78e5626f0e2f28fd4d344c8f2b807f4601c",
-        "version" : "1.0.0"
+        "revision" : "81032e9f22227584edd1bd908e2f866bf1897250",
+        "version" : "3.0.1"
       }
     }
   ],

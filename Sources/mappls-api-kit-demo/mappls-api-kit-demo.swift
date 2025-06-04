@@ -9,7 +9,7 @@ class MapplsApiKitDemo: NSObject {
         let destination = Waypoint(coordinate: CLLocationCoordinate2D(latitude: 28.32, longitude: 78.243))
         
         let routeOptions = RouteOptions(waypoints: [source, destination])
-        Directions.shared.calculate(routeOptions) { waypoints, routes, error in
+        Directions().calculate(routeOptions) { waypoints, routes, error in
             
         }
     }
