@@ -1,29 +1,35 @@
-// swift-tools-version:5.9
-
+// swift-tools-version:5.3
 import PackageDescription
-import Foundation
-
-let checksum = "91dae209167f2bbca32a217afa0c309516344ed358667840d0091cbdfc15572f"
 
 let package = Package(
-    name: "MapplsAPIKit",
+    name: "MapplsPackages",
+    platforms: [
+        .iOS(.v13)
+    ],
     products: [
         .library(
-            name: "MapplsAPIKit",
-            targets: ["mappls-api-kit-demo"]),
+            name: "MapplsAPIKitWrapper",
+            targets: ["MapplsAPIKitWrapper"]
+        ),
     ],
     dependencies: [
-        .package(url: "https://github.com/Siddharth-kushwaha/mappls-api-core-test.git", from: "3.0.1"),
+        .package(url: "https://github.com/mappls-api/mappls-api-core-ios-distribution.git", from: "2.0.0")
     ],
     targets: [
-        .target(
-            name: "mappls-api-kit-demo",
-            dependencies: [.product(name: "MapplsAPICore", package: "mappls-api-core-test"), "MapplsAPIKit"]
-        ),
+        // Binary Framework Target
         .binaryTarget(
             name: "MapplsAPIKit",
-            url: "https://mmi-api-team.s3.amazonaws.com/mappls-sdk-ios/mappls-api-kit/MapplsAPIKit-3.0.0.zip",
-            checksum: checksum
-        )
+            url: "https://mmi-api-team.s3.amazonaws.com/mappls-sdk-ios/mappls-api-kit/3.0.0/MapplsAPIKit.xcframework.zip",
+            checksum: "d1d68ce98a2a4ed8c0023d71a8c562f7e1f8e76236ae054bd5a20445576b7520"
+        ),
+
+        // Swift Wrapper Target
+        .target(
+            name: "MapplsAPIKitWrapper",
+            dependencies: [
+                "MapplsAPIKit",
+                .product(name: "MapplsAPICore", package: "mappls-api-core-ios-distribution")
+            ]
+        ),
     ]
 )

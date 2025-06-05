@@ -1,14 +1,16 @@
 {
-  "pins" : [
-    {
-      "identity" : "mappls-api-core-test",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Siddharth-kushwaha/mappls-api-core-test.git",
-      "state" : {
-        "revision" : "81032e9f22227584edd1bd908e2f866bf1897250",
-        "version" : "3.0.1"
+  "object": {
+    "pins": [
+      {
+        "package": "MapplsAPICore",
+        "repositoryURL": "https://github.com/mappls-api/mappls-api-core-ios-distribution.git",
+        "state": {
+          "branch": null,
+          "revision": "c5a836cffd0e80c1dfbbf34ad1a448350d6803e6",
+          "version": "2.0.0"
+        }
       }
-    }
-  ],
-  "version" : 2
+    ]
+  },
+  "version": 1
 }
